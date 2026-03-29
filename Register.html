@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register for IIMB Fest 2024</title>
+  </head>
+  <body>
+    <header>
+      <img src="/Images/IIMB-Logo.png" alt="IIMB logo" height="40px" />
+      <h1>IIMB Fest 2024</h1>
+      <p>Welcome to the best fest in Bangalore.Hope you have a great time.</p>
+
+      <nav>
+        <a href="./Index.html">Click here to go back to Home Page</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <hr />
+        <h2>Register for the Fest</h2>
+        <form action="/register">
+          <label for="name">Enter your name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            minlength="2"
+            maxlength="12"
+          />
+          <br /><br />
+          <label for="email">Enter your email</label>
+          <input type="email" name="email" id="email" />
+          <br /><br />
+          <label for="t-shirt_size">Select T-shirt size</label>
+          <select name="t-shirt_size" id="t-shirt_size">
+            <option value="">--Please select option--</option>
+            <option value="38">38</option>
+            <option value="40">40</option>
+            <option value="42">42</option>
+            <option value="44">44</option>
+          </select>
+          <br /><br />
+          <label for="checkbox1">Do you agree to all conditions</label>
+          <input type="checkbox" name="tnc" id="checkbox1" required />
+          <br /><br />
+          <label for="Alumni">Alumni:</label>
+          <input type="radio" name="attendee_type" id="Alumni" value="Alumni" />
+          <label for="Student">Student:</label>
+          <input
+            type="radio"
+            name="attendee_type"
+            id="Student"
+            value="Student"
+          />
+          <br /><br />
+
+          <button type="submit">Register</button>
+        </form>
+      </section>
+
+      
+    </main>
+  </body>
+</html>
